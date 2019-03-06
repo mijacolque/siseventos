@@ -1,0 +1,254 @@
+
+/*  */
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('Avenir Next Condensed.ttc');
+    font-family: 'Avenir Next';
+    src: url('Avenir Next.ttc');
+    font-family: 'Avenir LT Std 65 Medium';
+    src: url('AvenirLTStd-Medium..otf') format('opentype');
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('AvenirLTStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('Avenir Next Condensed.ttc');
+    font-family: 'Avenir Next';
+    src: url('Avenir Next.ttc');
+    font-family: 'Avenir LT Std 65 Medium';
+    src: url('AvenirLTStd-Medium.otf') format('opentype');
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('AvenirLTStd-Roman.otf') format('opentype');
+    font-weight: bold;
+}
+
+
+/* global */
+
+body{
+    font-family: 'Avenir Next',sans-serif;
+}
+
+.orange-clr{
+    color: #D3800F;
+}
+
+.green-clr{
+    color: #809628;
+}
+
+.blue-clr{
+    color: #357791;
+}
+
+.btn-blue{
+    background: #357791;
+    color: white;
+}
+
+.nav-item{
+    padding: 10px;
+}
+
+.nav-link{
+    color: #357791 !important;
+}
+
+.nav-item:hover{
+    background: #adb5bd;
+}
+
+.active{
+    background: #adb5bd;
+}
+
+.nav-dot{
+    color: transparent;
+    /* font-size: 2rem; */
+    background: url('../images/nav-dot.png') no-repeat center center;
+    background-size: contain;
+}
+
+.facebook-icon .fab{
+    width: 40px;
+    background: #3B5998;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid #adb5bd;
+}
+
+
+/* people showcase */
+
+#people-showcase{
+    height: 1000px;
+    background: url('../images/fondo\ expositores-03.png') no-repeat center center;
+    background-size: cover;
+}
+
+.person-pic{
+    width: 200px;
+    height: 200px;
+}
+
+.person-pic img{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.people-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* bienvenidas section */
+
+.bienvenidas-bg{
+    background: url('../images/tejido-01.png') no-repeat center center;
+    background-size: cover;
+}
+
+#bienvenidas-section h2{
+    color: #D3800F;
+}
+
+/* registrate section */
+#registrate-section{
+    height: 250px;
+    background: url('../images/fondo-registrate-01.png') no-repeat left center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.registrate-img{
+    width: 300px;
+    height: 250px;
+}
+
+/* llegar section */
+
+#llegar-section{
+    height: 200px;
+    background: url('../images/fondo-como-llegar-04.png') no-repeat center center;
+    background-size: cover;
+}
+
+#llegar-azul-section{
+    height: 500px;
+    background-color: #104d64;
+    background-size: cover;
+}
+
+#llegar-blanco-section{
+    height: 600px;
+    background-color: #C0C9C3;
+    background-size: cover;
+}
+
+
+/* winnie byanyima section */
+#winnie-byanyima-section{
+    position: relative;
+    background: url('../images/fondo\ pared-02.png')no-repeat center center;
+    background-size: cover;
+}
+#winnie-byanyima-bg-img{
+    background: url('../images/foto-winnie-diseño-08.png') no-repeat top center;
+    background-size: contain;
+}
+
+.winnie-byanyima-text{
+    padding: 70px 70px 50px 20px;
+    
+}
+
+.winnie-img{
+    width: 300px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+
+/* form */
+
+.form-bg{
+    background: url('../images/tejido-01.png') no-repeat center center;
+    background-size: cover;
+}
+
+.register-section-form label{
+    color: #357791;
+}
+
+#llegar-section h1{
+    font-family: 'Economica', sans-serif;
+}
+
+.registrate-sm-bg{
+    height: 250px;
+    display: none;
+    background: url('../images/registrate-section-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+.radio-label{
+    display: block;
+}
+
+input[type=radio]{
+    padding-top: 20px;
+}
+
+.radio-input{
+    padding: 10px 10px;
+}
+
+.form-row{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/* main footer */
+
+#main-footer{
+    background: white;
+}
+
+
+@media(max-width:1100px){
+    #registrate-section{
+        height: 200px;
+        background-position: center right;
+    }
+}
+
+@media(max-width:750px){
+    #winnie-byanyima-bg-img{
+        background: none;
+    }
+    .winnie-img{
+        display: block;
+    }
+    #people-showcase{
+        height: 700px;
+    }
+    #registrate-section{
+        height: 200px;
+        background:#183244;
+    }
+    .registrate-sm-bg{
+        display: block;
+    }
+}
